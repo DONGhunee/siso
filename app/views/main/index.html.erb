@@ -1,0 +1,55 @@
+<link rel="stylesheet" type="text/css"  href="/app/assets/stylesheets//rSlider.min.css">
+<script src="js/rSlider.min.js"></script>
+
+<style>
+    .con{
+        height:30%;
+        text-align:center;
+    }
+    .ui.button{
+        width:80%;
+        height:23%;
+        bottom:20%;
+    }
+    .co{
+        height:70%;
+    }
+    
+    i{
+        width:50px;    
+    }
+</style>
+<div class="co">
+   
+</div>
+<div class="con">
+    <button style="border-radius: 30px;" class="ui button" onclick="location.href='/main/signup_1' "><i class="comment icon"></i>카카오톡으로 회원가입</button><br><br>
+    <button style="border-radius: 30px;" class="ui button"><i class="facebook icon"></i>페이스북으로 회원가입</button>
+</div>
+<script>
+    var mySlider = new rSlider({
+
+    target: '#slider',
+
+    values: [2008, 2009, 2010, 2011, ...],
+
+    range: true // range slider
+
+});
+
+
+var mySlider = new rSlider({
+    target: '#slider',
+    values: [2008, 2009, 2010, 2011, ...],
+    range: true // range slider
+    set:    null, // an array of preselected values
+    width:    null,
+    scale:    true,
+    labels:   true,
+    tooltip:  true,
+    step:     null, // step size
+    disabled: false, // is disabled?
+    onChange: null // callback
+});
+
+</script>

@@ -1,0 +1,170 @@
+<style>
+    .mi{
+        text-align:center;
+        padding-top:9%;
+        
+    }
+    
+    .bi{
+        height:100%;
+    }
+    #inp{
+        bottom:0px;
+        width:90%;
+    }
+    .contan{
+        text-align:center;
+        
+    }
+    .to{
+        
+        display:inline-block;
+        text-align:left;
+    }
+    span{
+        font-size:20px;
+        font-weight:bold;
+    }
+     .ui.button{
+        bottom:20%;
+    }
+    .co{
+        height:100%;
+    }
+    
+    i{
+        width:50px;    
+    }
+    
+     .con{
+        height:30%;
+        text-align:center;
+    }
+    footer{
+        
+        height:10%;
+    }
+    .go{
+      
+    }
+    .ei{
+        height:30%;
+    }
+</style>
+
+
+<div class="mi">
+    <div><h2>시소 주선</h2></div>
+    <br>
+    <div class="ei">
+        <table style="width:100%;text-align:left;margin-bottom:25px;" align="left">
+            <tr>
+               <td style="width:50%;padding:4%;background:#E5E5E5;">
+                   <span style="font-weight:bold;font-size:1em;">파이리<br></span>
+                   <p>포스코 / 송도<br>
+                   경희대<br>
+                   179cm / 32살<br>
+                   무교</p>
+                   <br>
+                   <span style="font-size:14px;">2다리 건너 <br>아는사람이에요.</span>
+               </td>
+               <td style="width:50%;padding:3%;background:#A3A3A3;">
+                  
+                    <img src="/assets/ee.jpg" style="border-radius:7%;width:100%;height:auto;">
+                   
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <p style="font-weight:bold;">나와의 매칭도</p>
+    <div style="width:80%;margin-right:auto;margin-left:auto;">
+      <canvas id="myChart" style="width:auto;height:30%;"></canvas>
+      </div>
+    <div class="ui message" style="background:white;text-align:left;width:90%;margin-right:auto;margin-left:auto;">
+      <div class="header">
+        저는 이런 사람이에요
+      </div>
+      <p>저는 사람들과 어울리는 것을 좋아하는 활발한 성격의 사람입니다.<br>
+      주짓수, 스쿠버다이빙 등 운동을 즐겨하고 술은 필요시 조금 만, 담배는 안하구요.<br>
+      맛있는 음식을 좋아해서 맛집을 찾아다니는 소소한 취미가 있습니다.
+      </p>
+    </div>
+
+  
+   <div class="ui message" style="background:white;text-align:left;width:90%;margin-right:auto;margin-left:auto;">
+  <div class="header">
+    저는 이런 사람 만나고 싶어요
+  </div>
+  <p>긍정적이고 잘 웃는 분을 좋아합니다. 되도록 송도에서 근무 하시는 분이면 좋을 것 같아요.<br> 
+  가끔 퇴근 후 잠시 만나 얼굴 보고, 주말에 함께 센트럴 파크 도 걷는 그런 연애를 하고 싶습니다.<br>
+  함께 숨은 맛집 찾으러 다니고, 단골 맛집에서 마시는 맥주 한잔의 즐거움을 나눌 분 만나고 싶습니다.
+  </p>
+</div>
+</div>
+  
+</div>
+<br>
+<br>
+    
+</div>
+ <button style="border-radius:0;width:100%;height:10%;margin-right:0px;position:fixed;bottom:0;" class="ui button" onclick="location.href='/main/match3'"><span style="font-size:20px;font-weight:bold;text-align:center;">우리 만나볼까요?</span><i class="angle right icon"></i></button><br><br>
+
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["키", "학력", "지역", "나이", "종교"],
+        datasets: [{
+            label: '',
+            data: [12, 19, 3, 11, 17],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)'
+              
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)'
+               
+            ],
+            borderWidth: 0
+        }]
+    },
+    options: {
+            legend: {
+              display: false
+        },
+        
+        scales: {
+             xAxes: [{
+              gridLines: {
+                display: false,
+              },
+            }],
+            yAxes: [{
+                
+                
+                gridLines: {
+                    drawBorder: false,
+                  },
+                ticks: {
+                     display: false,
+                }
+            }]
+        }
+    }
+});
+</script>
